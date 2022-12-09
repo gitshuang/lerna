@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/gitshuang/lerna/issues"
   },
-  "gitHead": "0a87ffcdfee78b19979ad467f8dbf087688a8d87"
+  "gitHead": "547ea21ff16d1c0beb207a731b1a9bd3b8453173"
 }

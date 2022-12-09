@@ -1,0 +1,124 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'lerna'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/shuanger/Desktop/learnvue/lerna
+3 verbose session 13428a594e7c4226
+4 verbose user-agent lerna/4.0.0/node@v16.17.0+x64 (darwin)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '4.0.0' }
+6 verbose rootPath /Users/shuanger/Desktop/learnvue/lerna
+7 info current version 0.0.1-alpha.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly getCurrentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 2
+15 silly hasTags
+16 verbose hasTags true
+17 silly git-describe.sync "v0.0.1-alpha.0-2-g3be3094" => {"lastTagName":"v0.0.1-alpha.0","lastVersion":"v0.0.1-alpha.0","refCount":"2","sha":"3be3094","isDirty":false}
+18 info Looking for changed packages since v0.0.1-alpha.0
+19 info ignoring diff in paths matching [ 'ignored-file', '*.md' ]
+20 silly checking diff packages/a
+21 silly found diff in packages/a/README.md
+21 silly found diff in packages/a/__tests__/a.test.js
+21 silly found diff in packages/a/lib/a.js
+21 silly found diff in packages/a/package.json
+22 verbose filtered diff [
+22 verbose filtered diff   'packages/a/__tests__/a.test.js',
+22 verbose filtered diff   'packages/a/lib/a.js',
+22 verbose filtered diff   'packages/a/package.json'
+22 verbose filtered diff ]
+23 silly checking diff packages/b
+24 silly found diff in packages/b/README.md
+24 silly found diff in packages/b/__tests__/b.test.js
+24 silly found diff in packages/b/lib/b.js
+24 silly found diff in packages/b/package.json
+25 verbose filtered diff [
+25 verbose filtered diff   'packages/b/__tests__/b.test.js',
+25 verbose filtered diff   'packages/b/lib/b.js',
+25 verbose filtered diff   'packages/b/package.json'
+25 verbose filtered diff ]
+26 verbose updated a
+27 verbose updated b
+28 verbose git-describe undefined => "v0.0.1-alpha.0-2-g3be3094"
+29 silly git-describe parsed => {"lastTagName":"v0.0.1-alpha.0","lastVersion":"v0.0.1-alpha.0","refCount":"2","sha":"3be3094","isDirty":false}
+30 info execute Skipping releases
+31 silly lifecycle No script for "preversion" in "root", continuing
+32 silly lifecycle No script for "preversion" in "a", continuing
+33 silly lifecycle No script for "preversion" in "b", continuing
+34 silly lifecycle No script for "version" in "b", continuing
+35 silly lifecycle No script for "version" in "a", continuing
+36 silly lifecycle No script for "version" in "root", continuing
+37 silly gitAdd [ 'packages/b/package.json', 'packages/a/package.json', 'lerna.json' ]
+38 silly gitCommit chore(release): publish
+39 verbose git [ 'commit', '-m', 'chore(release): publish' ]
+40 silly gitTag v0.0.2-alpha.0
+41 verbose git [ 'tag', 'v0.0.2-alpha.0', '-m', 'v0.0.2-alpha.0' ]
+42 silly lifecycle No script for "postversion" in "a", continuing
+43 silly lifecycle No script for "postversion" in "b", continuing
+44 silly lifecycle No script for "postversion" in "root", continuing
+45 info git Pushing tags...
+46 silly gitPush origin master
+47 info publish Publishing packages to npm...
+48 notice Skipping all user and access validation due to third-party registry
+49 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+50 warn ENOLICENSE Packages a and b are missing a license.
+50 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+50 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+51 silly getCurrentSHA
+52 verbose getCurrentSHA 547ea21ff16d1c0beb207a731b1a9bd3b8453173
+53 silly lifecycle No script for "prepublish" in "root", continuing
+54 silly lifecycle No script for "prepare" in "root", continuing
+55 silly lifecycle No script for "prepublishOnly" in "root", continuing
+56 silly lifecycle No script for "prepack" in "root", continuing
+57 verbose pack-directory packages/a
+58 verbose pack-directory packages/b
+59 silly lifecycle No script for "prepublish" in "a", continuing
+60 silly lifecycle No script for "prepublish" in "b", continuing
+61 silly lifecycle No script for "prepare" in "a", continuing
+62 silly lifecycle No script for "prepare" in "b", continuing
+63 silly lifecycle No script for "prepublishOnly" in "a", continuing
+64 silly lifecycle No script for "prepublishOnly" in "b", continuing
+65 silly lifecycle No script for "prepack" in "a", continuing
+66 silly lifecycle No script for "prepack" in "b", continuing
+67 silly lifecycle No script for "postpack" in "a", continuing
+68 verbose packed packages/a
+69 silly lifecycle No script for "postpack" in "b", continuing
+70 verbose packed packages/b
+71 silly lifecycle No script for "postpack" in "root", continuing
+72 verbose publish a
+73 verbose publish b
+74 silly FetchError: request to http://registry.npmjs.org/a failed, reason: read ECONNRESET
+74 silly     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
+74 silly     at ClientRequest.emit (node:events:513:28)
+74 silly     at Socket.socketErrorListener (node:_http_client:481:9)
+74 silly     at Socket.emit (node:events:525:35)
+74 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+74 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+74 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+74 silly  FetchError: request to http://registry.npmjs.org/a failed, reason: read ECONNRESET
+74 silly     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
+74 silly     at ClientRequest.emit (node:events:513:28)
+74 silly     at Socket.socketErrorListener (node:_http_client:481:9)
+74 silly     at Socket.emit (node:events:525:35)
+74 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+74 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+74 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+74 silly   code: 'ECONNRESET',
+74 silly   errno: 'ECONNRESET',
+74 silly   syscall: 'read',
+74 silly   type: 'system'
+74 silly }
+75 error ECONNRESET request to http://registry.npmjs.org/a failed, reason: read ECONNRESET
+76 error FetchError: request to http://registry.npmjs.org/a failed, reason: read ECONNRESET
+76 error     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/lerna/node_modules/minipass-fetch/lib/index.js:110:14)
+76 error     at ClientRequest.emit (node:events:513:28)
+76 error     at Socket.socketErrorListener (node:_http_client:481:9)
+76 error     at Socket.emit (node:events:525:35)
+76 error     at emitErrorNT (node:internal/streams/destroy:157:8)
+76 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
