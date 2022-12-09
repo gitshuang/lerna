@@ -2,9 +2,10 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "lerna-update-wizard": "^1.1.2"
   },
   "scripts": {
-    "start": "lerna run --scope alhs start " 
+    "start": "lerna run --scope alhs start "
   }
 }
