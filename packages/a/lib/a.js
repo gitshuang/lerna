@@ -1,5 +1,7 @@
 'use strict';
-var b = require('b')
+console.log(11111)
+var b = require('blhs')
+console.log(b)
 module.exports = a;
 
 function a() {
@@ -7,3 +9,4 @@ function a() {
     var sum = b(2,3)
     console.log(sum)
 }
+a()
