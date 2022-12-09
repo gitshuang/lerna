@@ -1,6 +1,6 @@
 {
   "name": "alhs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "> TODO: description",
   "author": "lhs <1178614318@qq.com>",
   "homepage": "https://github.com/gitshuang/lerna#readme",
@@ -14,7 +14,7 @@
     "lib"
   ],
   "dependencies": {
-    "blhs": "^0.0.4"
+    "blhs": "^0.0.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
