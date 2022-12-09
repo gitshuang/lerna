@@ -1,5 +1,5 @@
 {
-  "name": "a",
+  "name": "alhs",
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "lhs <1178614318@qq.com>",
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/gitshuang/lerna/issues"
   },
-  "gitHead": "547ea21ff16d1c0beb207a731b1a9bd3b8453173"
+  "gitHead": "9505f03d425b0497cb2f0dc651ea2cf8a7c8f31b"
 }
