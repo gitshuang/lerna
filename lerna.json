@@ -2,6 +2,7 @@
   "packages": [
     "packages/*"
   ],
+  "version": "independent",
   "command": {
     "publish": {
       "ignoreChanges": [
@@ -13,6 +14,5 @@
     "bootstrap": {
       "ignore": "component-*"
     }
-  },
-  "version": "0.0.9"
+  }
 }
