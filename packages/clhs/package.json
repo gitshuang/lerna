@@ -1,0 +1,29 @@
+{
+  "name": "clhs",
+  "version": "0.0.5",
+  "description": "> TODO: description",
+  "author": "lhs <1178614318@qq.com>",
+  "homepage": "https://github.com/gitshuang/lerna#readme",
+  "license": "ISC",
+  "main": "lib/clhs.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitshuang/lerna.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/gitshuang/lerna/issues"
+  }
+}
